@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+
+* {
+
+    font-family: Poppins;
+    z-index: 5;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    margin-top: 0;
+}
+
+#principal-container {
+
+    display: flex;
+    justify-content: left;
+    height: 400px;
+
+}
+
+#principal {
+    
+    display: inline-block;
+    margin: 90px;
+    margin-top: 100px;
+    width: 590px;
+
+}
+
+#principal h1 {
+    font-size: 60px;
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    line-height: 82px;
+}
+
+#principal span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+    min-width: 600px;
+}
+
+#principal p {
+    margin-top: -35px;
+    font-weight: lighter;
+    line-height: 23px;
+
+}
+
+#more {
+
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #017143;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 14px;
+    margin-top: 15px;
+    width: 150px;
+    height: 35px;
+    box-sizing: border-box;
+    transition: .3s;
+
+}
+
+#coffee1 {
+
+    position: absolute;
+    display: inline-block;
+    width: 23%;
+    top: 21%;
+    right: 160px;
+    animation-duration: 3s;
+    animation-name: coffee;
+    animation-iteration-count: infinite;
+    min-width: 200px;
+    max-width: 300px;
+
+}
+
+#circle {
+
+    position: absolute;
+    background: #017143;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at right 800px);
+    z-index: 1;
+
+}
+
+footer {
+
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+
+}
+
+#t1,
+#t2,
+#t3 {
+    width: 70px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes coffee {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+#more:hover {
+
+    background: #fff;
+    color: #017143;
+    border: 1px solid#017143;
+    transition: .5s;
+
+}
+
+#t1:hover,
+#t2:hover,
+#t3:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+#home {
+    border-bottom: 4px solid#017143;
+    padding-bottom: 0px;
+}
+
+#menu:hover,
+#wn:hover,
+#contact:hover {
+
+    color: var(--greenColor);
+    border-bottom: 4px solid#0171424d;
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+
+    body {
+
+        overflow: auto;
+
+    }
+
+    ::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    #circle {
+        display: none;
+    }
+
+    
+    #principal {
+
+        width: 400px;
+        margin-top: 140px;
+       
+    }
+
+    #principal h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #principal span {
+
+        width: 200px;
+        margin: 10px;
+        font-size: 40px;
+
+    }
+
+    #principal p {
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    #coffee1 {
+
+        position: absolute;
+        width: 20%;
+        top: 140px;
+        right: 0;
+        z-index: 8;
+
+    }
+
+    footer {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        bottom: 12%;
+
+    }
+
+    #t1,
+    #t2,
+    #t3 {
+        width: 70px;
+
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    #principal-container {
+        justify-content: center;
+    }
+
+    #principal {
+        text-align: center;
+    }
+
+    #coffee1 {
+        display: none
+    }
+
+    footer {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-height: 570px) {
+
+    #principal-container{
+        height: 370px;
+    }
+ 
+    #principal{
+        margin-top: 65px;
+        
+    }
+
+    #principal p{
+        margin-top: 9px;
+    }
+}

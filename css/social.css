@@ -1,0 +1,61 @@
+#social {
+
+    display: flex;
+    position: absolute;
+    right: 30px;
+    bottom: 32%;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    padding: 20px 0;
+
+}
+
+#twitter,
+#instagram {
+
+    padding-top: 30px;
+    width: 20px;
+    filter: invert(1);
+
+}
+
+#facebook {
+
+    width: 12px;
+    filter: invert(1);
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+    #social-container {
+
+        display: flex;
+        align-items: center;
+    
+    }
+
+    #social {
+
+        background: #017143;
+        width: 100%;
+        position: absolute;
+        flex-direction: row;
+        right: 0;
+        bottom: 0px;
+        min-width: 280px;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+        
+    }
+
+    #twitter,
+    #instagram,
+    #facebook {
+
+        padding: 0;
+
+    }
+
+}
